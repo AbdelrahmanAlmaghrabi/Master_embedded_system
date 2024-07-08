@@ -20,8 +20,8 @@ int main() {
 	a=b;
 	b=x;
 
-	printf("After swaping a = %0.2f\n" ,a );
-	printf("After swaping b = %0.2f" ,b );
+	printf("After swapping a = %0.2f\n" ,a );
+	printf("After swapping b = %0.2f" ,b );
 	return 0 ;
 
 }
