@@ -1,0 +1,30 @@
+/*
+ * main.c
+ *
+ *  Created on: Jul 8, 2024
+ *      Author: Abdelrahman
+ */
+
+
+#include "stdio.h"
+
+int main() {
+
+
+	float a , b ,x ;
+	printf("enter value of a : ");
+	scanf("%f",&a);
+	printf("enter value of b : ");
+	scanf("%f",&b);
+	x=a;
+	a=b;
+	b=x;
+
+	printf("After swaping a = %0.2f\n" ,a );
+	printf("After swaping b = %0.2f" ,b );
+	return 0 ;
+
+}
+
+
+
