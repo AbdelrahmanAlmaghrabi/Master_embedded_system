@@ -1,0 +1,27 @@
+/*
+ * main.c
+ *
+ *  Created on: Jul 8, 2024
+ *      Author: Abdelrahman
+ */
+
+
+#include "stdio.h"
+
+int main() {
+	char c;
+	int x;
+	printf("enter the character :");
+	scanf("%c",&c);
+	x=c  ;
+	if((x>=65&&x<=90)||(x>=97&&x<=122))
+		printf("the input  is alphabet");
+	else
+		printf("the input not alphabet");
+
+	return 0 ;
+
+}
+
+
+
