@@ -1,0 +1,25 @@
+/*
+ * main.c
+ *
+ *  Created on: Jul 8, 2024
+ *      Author: Abdelrahman
+ */
+
+
+#include "stdio.h"
+
+int main() {
+
+
+	float x=0 , y=0 ,product ;
+	printf("enter two number :");
+
+	scanf("%f %f",&x,&y);
+	product = x*y;
+	printf("product :   %f" ,product );
+	return 0 ;
+
+}
+
+
+
