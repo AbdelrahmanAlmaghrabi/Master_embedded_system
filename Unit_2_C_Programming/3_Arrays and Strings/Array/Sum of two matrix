@@ -1,0 +1,58 @@
+/*
+ ============================================================================
+ Name        : pract.c
+ Author      : abdo
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+
+int main() {
+	float a [2][2];
+	float b [2][2];
+	float sum [2][2];
+
+	int i,j;
+	i=0; j=0;
+	fflush(stdin);fflush(stdout);
+	printf("Enter the element of first matrix :\n ");
+
+	for(i=0;i<2;i++){
+		for(j=0;j<2;j++){
+			printf("enter a%d%d : ",i+1,j+1);
+			fflush(stdin);fflush(stdout);
+			scanf("%f",&a[i][j]);
+			continue;
+		}
+
+	}
+
+	printf("Enter the element of second matrix :\n ");
+
+	for(i=0;i<2;i++){
+		for(j=0;j<2;j++){-
+			printf("enter b%d%d : ",i+1,j+1);
+		fflush(stdin);fflush(stdout);
+		scanf("%f",&b[i][j]);
+		continue;
+		}
+	}
+	printf(" \n SUM of matrix = \n ");
+
+
+	for(i=0;i<2;i++){
+		for(j=0;j<2;j++){
+			sum[i][j]=a[i][j] + b[i][j];
+			printf("%f \t",sum[i][j]);
+
+			continue;
+		}
+		printf("\n");
+	}
+
+
+	return 0;
+}
