@@ -1,0 +1,27 @@
+/*
+ * main.c
+ *
+ *  Created on: Jul 8, 2024
+ *      Author: Abdelrahman
+ */
+
+
+#include "stdio.h"
+
+int main() {
+	float x,y,z ;
+	printf("Enter the numbers : " );
+	scanf("%f %f %f",&x,&y,&z);
+	//scanf( "%i %i %i %i", &minx, &maxx, &miny, &maxy);
+
+	if(x>y&&x>z)
+		printf("the nummber :%.2f is the greatest ",x);
+	else if(y>x&&y>z)
+		printf("the number : %.2f is the greatest " ,y);
+	else
+		printf("the number : %.2f is the greatest ",z);
+
+
+	return 0 ;
+
+}
