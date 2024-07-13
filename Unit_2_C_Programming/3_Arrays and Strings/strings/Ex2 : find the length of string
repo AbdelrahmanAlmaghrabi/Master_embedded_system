@@ -1,0 +1,28 @@
+/*
+ ============================================================================
+ Name        : pract.c
+ Author      : abdo
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include<string.h>
+int main() {
+	char str[50];
+	char ch;
+	int i,fre;
+	printf("Enter a string :");
+	fflush(stdout);fflush(stdin);
+	gets(str);
+	fre=0;
+
+	for(i=0;str[i]!='\0';i++){
+		fre++;
+	}
+	printf("length of string : %d",fre);
+
+	return 0;
+}
