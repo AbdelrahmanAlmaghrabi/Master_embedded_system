@@ -17,9 +17,7 @@ int main() {
 	printf("Enter rows and column of matrix : ");
 	fflush(stdin);fflush(stdout);
 	scanf("%d %d",&x,&y);
-
 	printf("Enter elements of matrix : ");
-
 	for(i=0;i<x;i++){
 		for(j=0;j<y;j++){
 			printf("Enter element  a%d%d : ",i+1,j+1);
@@ -31,23 +29,23 @@ int main() {
 	for(i=0;i<x;i++){
 		for(j=0;j<y;j++){
 			printf(" %d ",arr1[i][j]);
-
 		}
 		printf("\n");
 	}
 
+	for(i=0;i<y;i++){
+		for(j=0;j<x;j++){
+			arr2[i][j]=arr1[j][i];
+		}
+		printf("\n");
+	}
 	printf("the transpose matrix  is : \n");
-	for(j=0;j<y;j++){
-		for(i=0;i<x;i++){
-			arr2[j][i]=arr1[i][j];
-			printf(" %d ",arr2[j][i]);
+	for(i=0;i<y;i++){
+		for(j=0;j<x;j++){
 
+			printf(" %d ",arr2[i][j]);
 		}
 		printf("\n");
 	}
-
-
-
-
 	return 0;
 }
