@@ -27,7 +27,6 @@ int main() {
 			scanf("%f",&a[i][j]);
 			continue;
 		}
-
 	}
 
 	printf("Enter the element of second matrix :\n ");
@@ -41,18 +40,13 @@ int main() {
 		}
 	}
 	printf(" \n SUM of matrix = \n ");
-
-
 	for(i=0;i<2;i++){
 		for(j=0;j<2;j++){
 			sum[i][j]=a[i][j] + b[i][j];
 			printf("%f \t",sum[i][j]);
-
 			continue;
 		}
 		printf("\n");
 	}
-
-
 	return 0;
 }
