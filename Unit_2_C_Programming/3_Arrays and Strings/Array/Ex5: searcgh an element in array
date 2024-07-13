@@ -1,0 +1,33 @@
+/*
+ ============================================================================
+ Name        : pract.c
+ Author      : abdo
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+
+int main() {
+	int n ,i,x;
+	int arr[10];
+	printf("Enter no of elements :");
+	fflush(stdin);fflush(stdout);
+	scanf("%d",&n);
+	for(i=0;i<n;i++){
+		scanf("%d",&arr[i]);
+	}
+	printf("Enter the element to be searched : ");
+	fflush(stdout);
+	scanf("%d",&x);
+
+	for(i=0;i<n;i++){
+		if(arr[i]==x){
+			printf("Number found at the location = %d",i+1);
+			break;
+		}
+	}
+	return 0;
+}
