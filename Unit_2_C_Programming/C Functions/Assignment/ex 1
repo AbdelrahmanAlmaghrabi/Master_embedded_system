@@ -1,0 +1,46 @@
+/*
+ ============================================================================
+ Name        : pract.c
+ Author      : abdo
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include<string.h>
+
+int prime(int x){
+	int y=0;
+	int i;
+	for(i=2;i<10;i++)
+
+		if((x%2!=0)&&(x%5!=0)&&(x%3!=0)){
+			y=x;
+	}
+
+	return y;
+}
+
+
+int main() {
+	int b,a,o,i;
+	printf("Enter tow numbers(intervals) :");
+	fflush(stdin);fflush(stdout);
+	scanf("%d",&a);
+	scanf("%d",&b);
+
+	for(i=a;i<=b;i++){
+		o = prime(i);
+		if(o==0){}
+
+		else
+		printf("%d\n",o);
+
+	}
+
+	return 0;
+}
+
+
