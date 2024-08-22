@@ -13,8 +13,10 @@ int main() {
 
 	float a , b ,x ;
 	printf("enter value of a : ");
+	fflush(stdout);
 	scanf("%f",&a);
 	printf("enter value of b : ");
+	fflush(stdout);
 	scanf("%f",&b);
 	x=a;
 	a=b;
@@ -25,6 +27,3 @@ int main() {
 	return 0 ;
 
 }
-
-
-
