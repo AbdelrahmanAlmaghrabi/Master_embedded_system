@@ -11,12 +11,9 @@
 int main() {
 	int x=0 , y ,sum;
 	printf("enter two integers :");
-
+	fflush(stdout);
 	scanf("%d    %d",&x,&y);
 	sum = x+y;
 	printf("sum =   %d" ,sum );
 	return 0 ;
 }
-
-
-
