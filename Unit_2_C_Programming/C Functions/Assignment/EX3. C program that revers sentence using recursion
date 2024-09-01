@@ -1,0 +1,30 @@
+/*
+ ============================================================================
+ Name        : pract.c
+ Author      : abdo
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+
+// Recursive function to reverse a sentence
+void reverseSentence() {
+    char c;
+    scanf("%c", &c); // Read the next character
+
+    if (c != '\n') {
+        reverseSentence(); // Recursive call
+        printf("%c", c); // Print the character after returning from recursion
+    }
+}
+
+int main() {
+    printf("Enter a sentence: ");
+    reverseSentence();
+    printf("\n");
+
+    return 0;
+}
