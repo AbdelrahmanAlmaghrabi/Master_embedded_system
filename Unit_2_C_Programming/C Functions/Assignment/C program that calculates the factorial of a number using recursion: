@@ -1,0 +1,34 @@
+/*
+ ============================================================================
+ Name        : pract.c
+ Author      : abdo
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+
+ // function calculate factorial using recursion
+int factorial(int n) {
+    if (n == 0 || n == 1)
+        return 1; //  0! = 1 and 1! = 1
+    else
+        return n * factorial(n - 1); // Recursive 
+}
+
+int main() {
+    int number;
+    
+     printf("Enter a number: ");
+    scanf("%d", &number);
+
+     
+    int result = factorial(number);
+    
+ 
+    printf("Factorial of %d is %d\n", number, result);
+    
+    return 0;
+}
